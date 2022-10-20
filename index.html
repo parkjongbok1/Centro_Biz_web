@@ -1,0 +1,458 @@
+<!-- header start -->
+<!-- header start -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>센트로비즈 춘천</title> 
+
+	<meta name="description" content="춘천 비즈니스의 새로운 중심을 열다! - 센트로비즈 춘천">
+	<meta name="keywords" content="춘천, 센트로비즈, 춘천 기숙사, 후평, 후평 산업단지, 후평 기숙사">
+	<!-- <link rel="canonical" href="">  오픈시 링크 삽입 -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="센트로비즈 춘천">
+	<meta property="og:description" content="업무에서 주거까지 원스톱! 춘천의 첫 번째, 기숙사 품은 지산">
+	<meta property="og:image" content="../meta/thumb.jpg">
+	<!--<link rel="shortcut icon" href="../meta/favicon.ico">-->
+	
+	<link rel="stylesheet" media="screen" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sub.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/srcoll_active.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/main.js"></script>
+</head>	
+<body class="main">
+    <header class="header">
+        <div class="inner">
+			<h1 class="logo">
+				<a href="index.html">
+					<img src="image/logo.png" alt="">
+				</a>
+			</h1>
+
+            <ul class="menu">
+				<li><a href="planning.html">사업개요</a></li>
+				<li><a href="location.html">입지환경</a></li>
+				<li><a href="premium.html">프리미엄</a></li>
+				<li><a href="special_design.html">특화설계</a></li>
+				<li><a href="contact.html">오시는길</a></li>
+				<li><a href="customer.html">관심고객등록</a></li>
+            </ul>
+
+			<div class="header_cont">
+				<div class="open"><img src="image/open.png" alt=""></div>
+				<div class="call"><img src="image/call.png" alt=""></div>
+				
+				<div class="side-menu-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="meun-bar">
+				<h1 class="bar_logo">
+					<img src="image/bar_logo.png" alt="">
+				</h1>
+				
+				<ul class="meun-cont">
+					<li><a href="planning.html">사업개요</a></li>
+					<li><a href="location.html">입지환경</a></li>
+					<li><a href="premium.html">프리미엄</a></li>
+					<li><a href="special_design.html">특화설계</a></li>
+					<li><a href="contact.html">오시는길</a></li>
+					<li><a href="customer.html">관심고객등록</a></li>
+				</ul>
+
+				<div class="bar_foot">
+					<img src="image/bar_foot.png" alt="">
+				</div>
+			</div>
+        </div><!-- inner -->
+    </header>
+	<!-- 끝 header -->
+<!-- // header end -->
+
+	<!--  Full-page Core Script -->
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+
+				navigation: true,
+				anchors: ['part1','part2','part3','part4','part5','part6','part7','part8','part9','part10'],
+				'verticalCentered': true,
+				'css3': true,
+				'navigation': false,
+			
+				'afterLoad': function(anchorLink, index){
+
+					if(index == 1){						
+					} else {
+						
+					}
+
+					if(index == 2){							
+					}else {
+						
+					}
+
+					if(index == 3){
+						
+					}
+					else {		
+							
+					}
+					
+					if(index == 4){
+						
+					}
+					else {		
+						
+									
+					}
+					
+					if(index == 5){
+						
+					}
+					else {		
+						
+					}
+
+				},
+				// 스크롤 사이드바
+				'onLeave': function(anchorLink, index){
+					// sec01
+					if(index == 1){
+						$('.overview').show()
+						$('.main_right').children('div').eq(0).addClass('active').siblings().removeClass('active')
+
+					}else {
+
+					}
+
+					// sec02
+					if(index == 2){
+						$('.premium').show()
+						$('.main_right').children('div').eq(1).addClass('active').siblings().removeClass('active')
+						$('.premium .premium_bg').addClass("pr_on")
+					} else {
+						$('.premium .premium_bg').removeClass("pr_on")
+					}
+
+					// sec03
+					if(index == 3){
+						$('.dormitory').show()
+						$('.main_right').children('div').eq(2).addClass('active').siblings().removeClass('active')
+						$('.dormitory .dormitory_bg').addClass("do_on")
+					} else {
+						$('.dormitory .dormitory_bg').removeClass("do_on")
+					}
+
+					// sec04
+					if(index == 4){
+						$('.location').show()
+						$('.main_right').children('div').eq(3).addClass('active').siblings().removeClass('active')
+						$('.location .location_bg').addClass("lo_on")
+					} else {
+						// $('.location .location_bg').removeClass("lo_on")
+					}
+					// // sec05
+					// if(index == 5){
+					// 	$('.foot').show()
+					// 	$('.foot .footer').addClass("fo_on")
+					// } else {
+					// }
+				},
+			});
+		});
+	</script>
+	<!-- // Full-page Core Script -->
+	
+	
+	<div id="all_wrap">
+		<!-- Scroll 우측 메뉴 -->
+		<div class="main_right">
+			<h1 class="logo">
+				<a href="index.html">
+					<img src="image/logo.png" alt="">
+				</a>
+			</h1>
+			
+			<div class="right_item active">
+				<div class="point_box">
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#part1">
+					<h2>OVERVIEW</h2>
+					<span>HOME</span>
+				</a>
+			</div>
+			<div class="right_item">
+				<div class="point_box">
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#part2">
+					<h2>PREMIUM</h2>
+					<span>CENTROBIZ</span>
+				</a>
+			</div>
+			<div class="right_item">
+				<div class="point_box">
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#part3">
+					<h2>DORMITORY</h2>
+					<span>SPECIAL DESIGN</span>
+				</a>
+			</div>
+			<div class="right_item">
+				<div class="point_box">
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#part4">
+					<h2>LOCATION</h2>
+					<span>PREMIUM</span>
+				</a>
+			</div>
+
+			<div class="foot_box">
+				<img src="image/point_fooot.png" alt="">
+			</div>
+		</div>
+		<!-- // Scroll 우측 메뉴 -->
+
+		<!-- Scroll 좌측 메뉴 -->
+		<div class="quickWrap">
+			<div class="contWrap">
+				<div class="open">
+					<img src="image/left_open.png" alt="">
+				</div>
+
+				<div class="linkWrap">
+					<a href="customer.html" class="left_item01"><img src="image/left_item01.png" alt=""></a>
+					<a href="contact.html" class="left_item02"><img src="image/left_item02.png" alt=""></a>
+				</div>
+
+				<div class="scroll">
+					<img src="image/left_scroll.png" alt="">
+					<img src="image/left_scroll_item.png" alt="">
+				</div>
+			</div>
+			<a href="#part1" class="toggleBtn"><img src="image/left_toggleBtn.png" alt=""></a>
+		</div>
+		<!-- Scroll 좌측 메뉴 -->
+
+		<div id="fullpage" style="">
+			<!-- // section1 -->
+			<div class="section overview" id="section1" style="">
+				<div class="sec01_box overview_bg">			
+					<div class="title">
+						<img src="image/overview_title01.png" alt="">
+						<img src="image/overview_title02.png" alt="">
+						<img src="image/overview_title03.png" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<!-- // section2 premium -->
+			<div class="section premium pr_on" id="section2" style="">
+				<div class="premium_bg">
+					<div class="title">
+						<img src="image/premium_title01.png" alt="">
+						<img src="image/premium_title02.png" alt="">
+						<a href="premium.html">
+							<img src="image/dormitory_btn.png" alt="">
+						</a>
+					</div>
+
+					<div class="premium_desc">
+						<div class="item pr_A_01">
+							<img src="image/premium_item01.png" alt="" class="p_item">
+							<img src="image/premium_item01_on.png" alt="" class="p_itme_on">
+						</div>
+
+						<div class="item pr_A_02">
+							<img src="image/premium_item02.png" alt="" class="p_item">
+							<img src="image/premium_item02_on.png" alt="" class="p_itme_on">
+						</div>
+
+						<div class="item pr_A_03">
+							<img src="image/premium_item03.png" alt="" class="p_item">
+							<img src="image/premium_item03_on.png" alt="" class="p_itme_on">
+						</div>
+
+						<div class="item pr_A_04">
+							<img src="image/premium_item04.png" alt="" class="p_item">
+							<img src="image/premium_item04_on.png" alt="" class="p_itme_on">
+						</div>
+
+						<div class="item pr_A_05">
+							<img src="image/premium_item05.png" alt="" class="p_item">
+							<img src="image/premium_item05_on.png" alt="" class="p_itme_on">
+						</div>
+
+						<div class="item pr_A_06">
+							<img src="image/premium_item06.png" alt="" class="p_item">
+							<img src="image/premium_item06_on.png" alt="" class="p_itme_on">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- // section3 dormitory -->
+			<div class="section dormitory do_on" id="section3" style="">
+				<div class="dormitory_bg">
+					<div class="inner">
+						<div class="dormitory_title01">
+							<div class="desc d_01 active">
+								<img src="image/dormitory_slider01-1.png" alt="">
+							</div>
+							<div class="desc d_02">
+								<img src="image/dormitory_slider02-1.png" alt="">
+							</div>
+							<div class="desc d_03">
+								<img src="image/dormitory_slider03-1.png" alt="">
+							</div>
+							<div class="desc d_04">
+								<img src="image/dormitory_slider04-1.png" alt="">
+							</div>
+						</div>
+						
+						<div class="dormitory_cont">
+							<div class="dormitory_title02">
+								<nav>
+									<div class="desc d_11 active">
+										<img src="image/dormitory_slider01_t01.png" alt="">
+										<img src="image/dormitory_slider01_t02.png" alt="">
+									</div>
+									<div class="desc d_22">
+										<img src="image/dormitory_slider02_t01.png" alt="">
+										<img src="image/dormitory_slider02_t02.png" alt="">
+									</div>
+									<div class="desc d_33">
+										<img src="image/dormitory_slider03_t01.png" alt="">
+										<img src="image/dormitory_slider03_t02.png" alt="">
+									</div>
+									<div class="desc d_44">
+										<img src="image/dormitory_slider04_t01.png" alt="">
+										<img src="image/dormitory_slider04_t02.png" alt="">
+									</div>
+								</nav>
+								<a href="special_design.html" class="dormitory_link">
+									<img src="image/dormitory_btn.png" alt="">
+								</a>
+							</div>
+	
+							<div class="dormitory_slide01">
+								<div class="d_slider d_item01">
+									<img src="image/dormitory_slider01.png" alt="">
+								</div>
+								<div class="d_slider d_item02">
+									<img src="image/dormitory_slider02.png" alt="">
+								</div>
+								<div class="d_slider d_item03">
+									<img src="image/dormitory_slider03.png" alt="">
+								</div>
+								<div class="d_slider d_item04">
+									<img src="image/dormitory_slider04.png" alt="">
+								</div>
+							</div>
+	
+							<div class="swiper-counter">
+								<div class="d_arrow dormitory-prev"><img src="image/dormitory-prev.png" alt=""></div>
+								<div class="pagingInfo">01 / 04</div>
+								<div class="d_arrow dormitory-next"><img src="image/dormitory-next.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- // section4 location -->
+			<div class="section location lo_on" id="section4" style="">
+				<div class="location_bg">
+					<div class="title">
+						<img src="image/location_title01.png" alt="">
+						<img src="image/location_title02.png" alt="">
+
+						<a href="location.html">
+							<img src="image/dormitory_btn.png" alt="">
+						</a>
+					</div>
+
+					<div class="locatio_desc">
+						<div class="item lo_A_01">
+							<img src="image/location_item01.png" alt="" class="lo_item">
+							<div class="desc_box">
+								<img src="image/location_item01-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="item lo_A_02">
+							<img src="image/location_item02.png" alt="" class="lo_item">
+							<div class="desc_box">
+								<img src="image/location_item02-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="item lo_A_03">
+							<img src="image/location_item03.png" alt="" class="lo_item">
+							<div class="desc_box">
+								<img src="image/location_item03-1.png" alt="">
+							</div>
+						</div>
+
+						<div class="item lo_A_04">
+							<img src="image/location_item04.png" alt="" class="lo_item">
+							<div class="desc_box">
+								<img src="image/location_item04-1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- // section5 footer -->
+	 		<div class="section fp-auto-height foot fo_on" id="section5">
+				<div class="footer" style="height: 350px;">
+					<img src="image/foot_logo.png" alt="" class="foot_logo">
+				
+					<div class="foot_cont">
+					  <img src="image/foot_title01.png" alt="" class="title01">
+				
+					  <span class="foot_line"></span>
+					  
+					  <img src="image/foot_title02.png" alt="" class="title02">
+					  
+					  <div class="title_box">
+						<h2>COPYRIGHT ⓒ 2022
+						  <span>센트로비즈 춘천</span>
+						  .ALLRIGHT RESERVED
+						</h2>
+						<a href="" target="_blank" class="dasan">.POWERED BY DASANREALAD</a>
+						<a href="" target="_blank" class="admin">.ADMIN</a>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div><!-- // fullpage -->
+	</div><!-- // all_wrap -->
+</body>
+</html>    
